@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectSphere | Video Meetings, Chat, Phone, and AI</title>
+    <meta
+      name="description"
+      content="A modern collaboration platform landing page inspired by video meetings, team chat, calling, events, and AI productivity tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="ConnectSphere home">
+          <span class="brand-mark">CS</span>
+          <span>ConnectSphere</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="#products">Products</a>
+          <a href="#meeting">Meeting</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#ai">AI</a>
+          <a href="#customers">Customers</a>
+          <a href="#pricing">Pricing</a>
+          <a href="contact.html">Contact Sales</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="#meeting" class="link-button">Join Meeting</a>
+          <a href="#meeting" class="button button-outline">Host Meeting</a>
+          <a href="contact.html" class="button button-primary">Contact Sales</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Unified communications for modern teams</p>
+          <h1>Meet, chat, call, and get work done in one AI-powered workspace.</h1>
+          <p class="hero-copy">
+            Bring video meetings, team messaging, phone, webinars, whiteboards, and AI summaries together in a
+            polished collaboration hub for every team.
+          </p>
+          <div class="hero-actions">
+            <a href="#meeting" class="button button-primary button-large">Start a Meeting</a>
+            <a href="#products" class="button button-soft button-large">Explore Products</a>
+          </div>
+          <div class="hero-trust">
+            <span>Trusted-style experience for</span>
+            <strong>remote teams</strong>
+            <strong>hybrid offices</strong>
+            <strong>customer support</strong>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Video meeting product preview">
+          <div class="meeting-card">
+            <div class="meeting-topbar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="meeting-title">Weekly Team Sync</span>
+            </div>
+            <div class="meeting-grid">
+              <div class="participant primary">
+                <span>MA</span>
+                <p>Muhammad</p>
+              </div>
+              <div class="participant purple">
+                <span>AK</span>
+                <p>Aisha</p>
+              </div>
+              <div class="participant teal">
+                <span>JR</span>
+                <p>Jordan</p>
+              </div>
+              <div class="participant orange">
+                <span>SL</span>
+                <p>Sofia</p>
+              </div>
+            </div>
+            <div class="meeting-controls">
+              <button type="button">Mute</button>
+              <button type="button">Video</button>
+              <button type="button">Share</button>
+              <button type="button" class="end-call">End</button>
+            </div>
+          </div>
+
+          <div class="ai-note">
+            <span class="spark">*</span>
+            <div>
+              <strong>AI Companion</strong>
+              <p>3 decisions captured, 5 action items ready.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-strip" aria-label="Customer logos">
+        <span>Northstar Bank</span>
+        <span>BrightCare</span>
+        <span>MetroLearn</span>
+        <span>CloudRetail</span>
+        <span>BluePeak</span>
+      </section>
+
+      <section class="meeting-section" id="meeting">
+        <div class="meeting-panel">
+          <div class="meeting-intro">
+            <p class="eyebrow">Live meetings</p>
+            <h2>Host a meeting or join one with a meeting ID.</h2>
+            <p>
+              Use Host Meeting to create a room, then copy the meeting link or meeting ID. Other people can paste the
+              same ID into Join Meeting.
+            </p>
+          </div>
+
+          <div class="meeting-actions-grid">
+            <form class="meeting-action-card" id="host-meeting-form">
+              <span class="meeting-action-icon">Host</span>
+              <h3>Host Meeting</h3>
+              <p>Create a new meeting room and invite others.</p>
+              <label for="host-name">Your name</label>
+              <input id="host-name" name="host-name" type="text" autocomplete="name" placeholder="Your name" />
+              <button class="button button-primary" type="submit">Host Meeting</button>
+            </form>
+
+            <form class="meeting-action-card" id="join-meeting-form">
+              <span class="meeting-action-icon">Join</span>
+              <h3>Join Meeting</h3>
+              <p>Paste the meeting ID shared by the host.</p>
+              <label for="join-room-name">Meeting ID</label>
+              <input
+                id="join-room-name"
+                name="join-room-name"
+                type="text"
+                autocomplete="off"
+                placeholder="example: team-sync-4821"
+              />
+              <button class="button button-outline" type="submit">Join Meeting</button>
+            </form>
+          </div>
+        </div>
+
+        <p class="meeting-help" id="meeting-help">
+          Camera and microphone permission will be requested by your browser when the meeting starts.
+        </p>
+
+        <div class="video-shell">
+          <div class="video-placeholder" id="video-placeholder">
+            <strong>Your meeting will appear here.</strong>
+            <span>Click Host Meeting or Join Meeting to enter a live video room.</span>
+          </div>
+          <div id="jitsi-container" class="jitsi-container" aria-label="Live video meeting"></div>
+        </div>
+
+        <div class="meeting-toolbar">
+          <button class="button button-outline" id="copy-meeting-link" type="button">Copy Meeting Link</button>
+          <button class="button button-soft" id="leave-meeting" type="button" disabled>Leave Meeting</button>
+        </div>
+      </section>
+
+      <section class="section" id="products">
+        <div class="section-heading">
+          <p class="eyebrow">One platform</p>
+          <h2>Everything your team needs to connect and collaborate.</h2>
+          <p>
+            A product suite inspired by leading collaboration tools, designed with a fresh brand and responsive UI.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="icon">Play</span>
+            <h3>Meetings</h3>
+            <p>HD video meetings with screen sharing, reactions, breakout rooms, and smart recaps.</p>
+          </article>
+          <article class="product-card">
+            <span class="icon">#</span>
+            <h3>Team Chat</h3>
+            <p>Persistent channels, direct messages, file sharing, and searchable team knowledge.</p>
+          </article>
+          <article class="product-card">
+            <span class="icon">Call</span>
+            <h3>Cloud Phone</h3>
+            <p>Business calling, voicemail, routing, and call insights for distributed teams.</p>
+          </article>
+          <article class="product-card">
+            <span class="icon">Board</span>
+            <h3>Whiteboard</h3>
+            <p>Brainstorm, map ideas, and turn working sessions into shared plans.</p>
+          </article>
+          <article class="product-card">
+            <span class="icon">Live</span>
+            <h3>Webinars</h3>
+            <p>Host polished virtual events with registration, engagement tools, and analytics.</p>
+          </article>
+          <article class="product-card">
+            <span class="icon">AI</span>
+            <h3>AI Notes</h3>
+            <p>Summaries, follow-ups, draft messages, and meeting highlights generated automatically.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="ai">
+        <div class="panel-copy">
+          <p class="eyebrow">AI built in</p>
+          <h2>Turn every conversation into clear next steps.</h2>
+          <p>
+            Capture decisions, summarize threads, draft follow-ups, and surface customer insights without switching
+            between disconnected tools.
+          </p>
+          <ul class="check-list">
+            <li>Meeting summaries and action items</li>
+            <li>Smart chat replies and document drafts</li>
+            <li>Customer conversation insights</li>
+            <li>Personal prep briefings before calls</li>
+          </ul>
+        </div>
+
+        <div class="insight-card">
+          <div class="insight-header">
+            <span>AI Brief</span>
+            <strong>Today at 9:30 AM</strong>
+          </div>
+          <h3>Project launch summary</h3>
+          <p>
+            The team approved the homepage design, assigned content updates, and scheduled customer interviews for
+            Thursday.
+          </p>
+          <div class="tasks">
+            <span>Design approved</span>
+            <span>3 follow-ups</span>
+            <span>2 risks flagged</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="solutions">
+        <div class="section-heading">
+          <p class="eyebrow">Solutions</p>
+          <h2>Built for the way every department works.</h2>
+        </div>
+
+        <div class="solution-tabs" role="tablist" aria-label="Solution categories">
+          <button class="tab active" type="button" data-solution="collaboration">Collaboration</button>
+          <button class="tab" type="button" data-solution="support">Customer Support</button>
+          <button class="tab" type="button" data-solution="sales">Sales</button>
+          <button class="tab" type="button" data-solution="education">Education</button>
+        </div>
+
+        <div class="solution-card" id="solution-card">
+          <div>
+            <p class="eyebrow">Collaboration</p>
+            <h3>Keep hybrid teams aligned from anywhere.</h3>
+            <p>
+              Connect meetings, chat, docs, and phone into one workspace so projects keep moving and teams stay
+              focused.
+            </p>
+          </div>
+          <a href="contact.html" class="button button-primary">Talk to Sales</a>
+        </div>
+      </section>
+
+      <section class="metrics-section" id="customers">
+        <div class="metric">
+          <strong>4.8/5</strong>
+          <span>average customer rating</span>
+        </div>
+        <div class="metric">
+          <strong>99.99%</strong>
+          <span>reliability-style uptime</span>
+        </div>
+        <div class="metric">
+          <strong>120+</strong>
+          <span>countries supported</span>
+        </div>
+        <div class="metric">
+          <strong>24/7</strong>
+          <span>global support coverage</span>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="testimonial-card">
+          <p>
+            "ConnectSphere gives our team one place to meet, message, support customers, and follow up faster with AI."
+          </p>
+          <div>
+            <strong>Nadia Khan</strong>
+            <span>Founder, RemoteOps Studio</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="pricing">
+        <p class="eyebrow">Start today</p>
+        <h2>Ready to connect your team?</h2>
+        <p>Create a modern collaboration website that feels familiar, trustworthy, and easy to use.</p>
+        <div class="hero-actions">
+          <a href="#pricing" class="button button-primary button-large">Sign Up Free</a>
+          <a href="contact.html" class="button button-outline-light button-large">Contact Sales</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="#home">
+          <span class="brand-mark">CS</span>
+          <span>ConnectSphere</span>
+        </a>
+        <p>Video meetings, chat, phone, webinars, and AI productivity in one workspace.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#products">Products</a>
+        <a href="#meeting">Meeting</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#ai">AI</a>
+        <a href="#pricing">Pricing</a>
+        <a href="contact.html">Contact Sales</a>
+      </div>
+    </footer>
+
+    <script src="https://meet.jit.si/external_api.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

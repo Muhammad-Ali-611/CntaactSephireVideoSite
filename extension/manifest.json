@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "ConnectSphere Meetings",
+  "description": "Host or join ConnectSphere video meetings from your browser.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "ConnectSphere Meetings",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "tabs"]
+}

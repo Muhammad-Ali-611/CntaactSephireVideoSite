@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectSphere Meetings</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="popup-header">
+        <span class="brand-mark">CS</span>
+        <div>
+          <h1>ConnectSphere</h1>
+          <p>Host or join a meeting</p>
+        </div>
+      </header>
+
+      <section class="quick-actions" aria-label="Meeting actions">
+        <button class="button button-primary" id="host-meeting" type="button">Host Meeting</button>
+
+        <form id="join-form" class="join-form">
+          <label for="meeting-id">Meeting ID</label>
+          <input id="meeting-id" type="text" autocomplete="off" placeholder="team-sync-4821" />
+          <button class="button button-outline" type="submit">Join Meeting</button>
+        </form>
+      </section>
+
+      <section class="settings">
+        <button class="settings-toggle" id="settings-toggle" type="button" aria-expanded="false">
+          Website settings
+        </button>
+
+        <form class="settings-form" id="settings-form" hidden>
+          <label for="app-url">Public website URL</label>
+          <input id="app-url" type="url" placeholder="https://your-site.com" />
+          <button class="button button-soft" type="submit">Save URL</button>
+          <p id="status-message" class="status-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

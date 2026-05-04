@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Sales | ConnectSphere</title>
+    <meta
+      name="description"
+      content="Contact ConnectSphere sales to discuss meetings, team chat, calling, webinars, and AI collaboration tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="ConnectSphere home">
+          <span class="brand-mark">CS</span>
+          <span>ConnectSphere</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html#products">Products</a>
+          <a href="index.html#meeting">Meeting</a>
+          <a href="index.html#solutions">Solutions</a>
+          <a href="index.html#ai">AI</a>
+          <a href="contact.html">Contact Sales</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="index.html#meeting" class="link-button">Join Meeting</a>
+          <a href="index.html#meeting" class="button button-outline">Host Meeting</a>
+          <a href="contact.html" class="button button-primary">Contact Sales</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact sales</p>
+          <h1>Let us help you build the right collaboration plan.</h1>
+          <p>
+            Tell us about your team, meeting needs, and goals. A ConnectSphere specialist can help with pricing,
+            rollout, training, and setup.
+          </p>
+
+          <div class="contact-highlights">
+            <div>
+              <strong>Meetings and webinars</strong>
+              <span>Host calls, classes, events, and team syncs.</span>
+            </div>
+            <div>
+              <strong>AI productivity</strong>
+              <span>Summaries, notes, action items, and follow-ups.</span>
+            </div>
+            <div>
+              <strong>Team deployment</strong>
+              <span>Plan licenses, departments, onboarding, and support.</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" name="contact-sales" method="POST" data-netlify="true" action="thank-you.html">
+          <input type="hidden" name="form-name" value="contact-sales" />
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">First name</label>
+              <input id="first-name" name="first-name" type="text" autocomplete="given-name" required />
+            </div>
+            <div class="form-field">
+              <label for="last-name">Last name</label>
+              <input id="last-name" name="last-name" type="text" autocomplete="family-name" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-field">
+            <label for="company">Company or organization</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="team-size">Team size</label>
+              <select id="team-size" name="team-size" required>
+                <option value="">Select team size</option>
+                <option value="1-10">1-10</option>
+                <option value="11-50">11-50</option>
+                <option value="51-200">51-200</option>
+                <option value="201-1000">201-1000</option>
+                <option value="1000+">1000+</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="interest">Main interest</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select interest</option>
+                <option value="Video meetings">Video meetings</option>
+                <option value="Webinars and events">Webinars and events</option>
+                <option value="AI notes">AI notes</option>
+                <option value="Team chat">Team chat</option>
+                <option value="Full platform">Full platform</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">How can sales help?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your goals, timeline, or questions."
+              required
+            ></textarea>
+          </div>
+
+          <button class="button button-primary button-large" type="submit">Submit Request</button>
+          <p class="form-note">This form is ready for Netlify Forms after you redeploy the site.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">CS</span>
+          <span>ConnectSphere</span>
+        </a>
+        <p>Video meetings, chat, phone, webinars, and AI productivity in one workspace.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#meeting">Meeting</a>
+        <a href="index.html#solutions">Solutions</a>
+        <a href="contact.html">Contact Sales</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
