@@ -425,6 +425,7 @@ h3 {
 .section,
 .meeting-section,
 .contact-hero,
+.policy-page,
 .split-section,
 .metrics-section,
 .testimonial-section,
@@ -453,7 +454,9 @@ h3 {
 
 .contact-copy p,
 .form-note,
-.thank-you-card p {
+.thank-you-card p,
+.policy-card p,
+.policy-date {
   color: var(--muted);
   line-height: 1.7;
 }
@@ -483,12 +486,36 @@ h3 {
 }
 
 .contact-form,
+.policy-card,
 .thank-you-card {
   padding: 34px;
   border: 1px solid var(--line);
   border-radius: 30px;
   background: var(--white);
   box-shadow: var(--shadow);
+}
+
+.policy-page {
+  padding: 86px 0 54px;
+}
+
+.policy-page h1 {
+  max-width: 900px;
+}
+
+.policy-card {
+  max-width: 920px;
+  margin-top: 34px;
+}
+
+.policy-card h2 {
+  margin-top: 30px;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.policy-card h2:first-child {
+  margin-top: 0;
 }
 
 .contact-form {

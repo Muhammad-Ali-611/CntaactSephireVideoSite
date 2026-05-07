@@ -3,9 +3,15 @@
   "name": "ConnectSphere Meetings",
   "description": "Host or join ConnectSphere video meetings from your browser.",
   "version": "1.0.0",
+  "icons": {
+    "128": "icon-128.png"
+  },
   "action": {
     "default_title": "ConnectSphere Meetings",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon-128.png"
+    }
   },
   "permissions": ["storage", "tabs"]
 }
