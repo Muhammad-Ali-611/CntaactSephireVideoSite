@@ -36,8 +36,7 @@ function setStatus(message) {
 }
 
 async function getAppUrl() {
-  const result = await chrome.storage.sync.get({ appUrl: defaultAppUrl });
-  return normalizeAppUrl(result.appUrl);
+  return normalizeAppUrl(localStorage.getItem("appUrl") || defaultAppUrl);
 }
 
 async function openMeeting(meetingId) {
@@ -46,7 +45,7 @@ async function openMeeting(meetingId) {
   url.searchParams.set("room", cleanMeetingId(meetingId));
   url.hash = "meeting";
 
-  await chrome.tabs.create({ url: url.toString() });
+  window.open(url.toString(), "_blank", "noopener");
   window.close();
 }
 
@@ -90,7 +89,7 @@ settingsForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  await chrome.storage.sync.set({ appUrl });
+  localStorage.setItem("appUrl", appUrl);
   appUrlInput.value = appUrl;
   setStatus("Website URL saved.");
 });

@@ -1,0 +1,21 @@
+=== SHORT DESCRIPTION (Chrome Web Store — max 132 characters) ===
+
+Host or join ConnectSphere meetings fast. Video calls use open-source Jitsi Meet; this opens your meeting site.
+
+
+=== DETAILED DESCRIPTION (Chrome Web Store — full description field) ===
+
+What ConnectSphere Meetings does
+ConnectSphere Meetings is a simple toolbar shortcut: Host Meeting creates a meeting ID and opens your ConnectSphere page in a new tab. Join Meeting opens the same page with the meeting ID you enter. You use your normal browser tab for camera and microphone permissions during the call.
+
+Video meetings and Jitsi Meet
+Video meetings are powered by the open-source Jitsi Meet service (https://jitsi.org). ConnectSphere provides the host/join flow and branded website experience on your deployed site; the live audio and video session runs in Jitsi inside that page. We do not claim Jitsi is proprietary ConnectSphere technology—this integration is intentional and disclosed here and on the website.
+
+Permissions and privacy
+This extension requests no special browser permissions. It does not read your browsing history, inject scripts into unrelated websites, or modify pages you visit. It opens your ConnectSphere meeting URL in a new browser tab. Optional website URL you save in the extension stays in local browser storage on your device.
+
+Privacy policy
+See the privacy policy linked in the store listing for details.
+
+Who this is for
+Teams and individuals who want one-click access to the ConnectSphere meeting experience from Chrome.
